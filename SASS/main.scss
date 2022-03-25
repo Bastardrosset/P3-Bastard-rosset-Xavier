@@ -1,0 +1,145 @@
+/***
+logo et titres: font-family: 'Shrikhand'
+Textes: font-family: 'Roboto', sans-serif;
+***/
+/****** Couleurs ********/
+$Primary:#9356DC;
+$Secondary: #FF79DA;
+$Tertiary: #99E2D0;
+$Gray:#F2F2F2;
+/******* Général *******/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    font-family: 'Shrikhand', cursive;
+    font-weight: 900;
+}
+h2{
+    font-size: 22px;
+    font-weight: 900;
+}
+/*** HEADER ***/
+header h1{
+    font-size: 26px;
+    text-align: center;
+}
+.location{
+    background-color: rgb(230, 229, 229);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 2px 3px 0px rgb(184, 184, 184);
+}
+.location span{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.location input{
+    border: none;
+    background-color: rgb(230, 229, 229);
+    font-weight: 700;
+    text-align: center;
+}
+.location i{
+    text-align: center;
+    transform: translateX(15px);
+}
+.reservez{
+    background-color: $Gray;
+    height: 100%;
+}
+.reservez h2{
+    text-align: center;
+    padding-top: 30px;
+    width: 250px;
+    margin-left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+    padding-bottom: 10px;
+}
+header p{
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+.exploreRestaurants{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    padding: 15px 5px;
+    width: 180px;
+    border-radius: 25px;
+    background: linear-gradient(170deg, $Secondary, $Primary);
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+/****** Main page d'accueil ******/
+.fonctionnement{
+    margin: 40px 0px 0px 5px;
+}
+.fonctionnement .list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 15px;
+}
+.fonctionnement span{
+    background-color: $Primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transform: translateX(-420%);
+}
+.fonctionnement .list button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 90%;
+    background-color: #FFF;
+    box-shadow: 0px 2px 7px 1px #b8b8b8;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 10px;
+}
+.fonctionnement .list i{
+    transform: translateX(-290%);
+}
+/*** Photos des restaurants ***/
+.column{
+    background-color: $Gray;
+    padding: 10px;
+    width: 100%;
+}
+.Restaurant_1,
+.Restaurant_2,
+.Restaurant_3,
+.Restaurant_4{
+    height: 250px;
+    width: 95%;
+    border-radius: 20px;
+    background-color: #FFF;
+}
+.column img{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+.restaurant_1 .text{
+}

@@ -1,0 +1,200 @@
+@charset "UTF-8";
+/***
+logo et titres: font-family: 'Shrikhand'
+Textes: font-family: 'Roboto', sans-serif;
+***/
+/****** Couleurs ********/
+/******* Général *******/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-family: 'Shrikhand', cursive;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 900;
+}
+
+/*** HEADER ***/
+header h1 {
+  font-size: 26px;
+  text-align: center;
+}
+
+.location {
+  background-color: #e6e5e5;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: inset 0px 2px 3px 0px #b8b8b8;
+          box-shadow: inset 0px 2px 3px 0px #b8b8b8;
+}
+
+.location span {
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.location input {
+  border: none;
+  background-color: #e6e5e5;
+  font-weight: 700;
+  text-align: center;
+}
+
+.location i {
+  text-align: center;
+  -webkit-transform: translateX(15px);
+          transform: translateX(15px);
+}
+
+.reservez {
+  background-color: #F2F2F2;
+  height: 100%;
+}
+
+.reservez h2 {
+  text-align: center;
+  padding-top: 30px;
+  width: 250px;
+  margin-left: 50%;
+  position: relative;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding-bottom: 10px;
+}
+
+header p {
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+.exploreRestaurants {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border: none;
+  padding: 15px 5px;
+  width: 180px;
+  border-radius: 25px;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+/****** Main page d'accueil ******/
+.fonctionnement {
+  margin: 40px 0px 0px 5px;
+}
+
+.fonctionnement .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.fonctionnement span {
+  background-color: #9356DC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 14px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -webkit-transform: translateX(-420%);
+          transform: translateX(-420%);
+}
+
+.fonctionnement .list button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  width: 90%;
+  background-color: #FFF;
+  -webkit-box-shadow: 0px 2px 7px 1px #b8b8b8;
+          box-shadow: 0px 2px 7px 1px #b8b8b8;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.fonctionnement .list i {
+  -webkit-transform: translateX(-290%);
+          transform: translateX(-290%);
+}
+
+/*** Photos des restaurants ***/
+.column {
+  background-color: #F2F2F2;
+  padding: 10px;
+  width: 100%;
+}
+
+.Restaurant_1,
+.Restaurant_2,
+.Restaurant_3,
+.Restaurant_4 {
+  height: 250px;
+  width: 95%;
+  border-radius: 20px;
+  background-color: #FFF;
+}
+
+.column img {
+  width: 100%;
+  height: 200px;
+  border-radius: 20px 20px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=main.css.map */
