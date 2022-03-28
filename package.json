@@ -4,7 +4,7 @@
   "description": "Projet N°3 ohmyfood",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass":"$ sass --watch  main.scss main.css"
   },
   "repository": {
     "type": "git",
