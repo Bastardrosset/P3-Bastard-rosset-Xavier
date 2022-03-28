@@ -1,6 +1,22 @@
 {
-  "dependencies": {
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet N°3 ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bastardrosset/P3-Bastard-rosset-Xavier.git"
+  },
+  "author": "Xav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bastardrosset/P3-Bastard-rosset-Xavier/issues"
+  },
+  "homepage": "https://github.com/Bastardrosset/P3-Bastard-rosset-Xavier#readme",
+  "devDependencies": {
     "sass": "^1.49.9"
   }
-  
 }
