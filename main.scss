@@ -1,4 +1,12 @@
 @charset "UTF-8";
+@import"./Abstracts/variables";
+@import"./Abstracts/mixins";
+@import"./Base/animation";
+@import"./Base/base";
+@import"./Base/utilities";
+@import"./Components/button";
+@import"./Layout/header";
+@import"./Layout/footer";
 /***
 logo et titres: font-family: 'Shrikhand'
 Textes: font-family: 'Roboto', sans-serif;
@@ -35,8 +43,8 @@ header h1 {
   font-size: 26px;
   text-align: center;
 }
-header.location {
-  background-color: #e6e5e5;
+header .location {
+  background-color: $color-light-gray;
   height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,8 +55,8 @@ header.location {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: inset 0px 2px 3px 0px #b8b8b8;
-          box-shadow: inset 0px 2px 3px 0px #b8b8b8;
+  -webkit-box-shadow: inset 0px 2px 3px 0px $color-gray;
+          box-shadow: inset 0px 2px 3px 0px $color-gray;
 
 & span {
   width: 150px;
@@ -64,12 +72,13 @@ header.location {
           text-align: center;
           -webkit-transform: translateX(15px);
           transform: translateX(15px);
+      }
       & input {
               border: none;
-              background-color: #e6e5e5;
+              background-color: $color-light-gray;
               font-weight: 700;
               text-align: center;
-}}}}
+}}}
 
 .reservez {
   background-color: #F2F2F2;
@@ -102,8 +111,8 @@ header p {
   padding: 15px 5px;
   width: 180px;
   border-radius: 25px;
-  background: linear-gradient(170deg, #FF79DA, #9356DC);
-  color: #fff;
+  background: linear-gradient(170deg, $secondary-color, $color-primary);
+  color: $color-white;
   font-weight: 500;
   margin-bottom: 30px;
 }
@@ -130,6 +139,6 @@ header p {
   height: 250px;
   width: 95%;
   border-radius: 20px;
-  background-color: #FFF;
+  background-color: $color-white;
 }
 /*# sourceMappingURL=main.css.map */

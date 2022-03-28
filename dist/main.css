@@ -36,7 +36,7 @@ header h1 {
   text-align: center;
 }
 
-header.location {
+header .location {
   background-color: #e6e5e5;
   height: 40px;
   display: -webkit-box;
@@ -51,7 +51,7 @@ header.location {
   -webkit-box-shadow: inset 0px 2px 3px 0px #b8b8b8;
   box-shadow: inset 0px 2px 3px 0px #b8b8b8;
 }
-header.location span {
+header .location span {
   width: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,12 +62,12 @@ header.location span {
   -ms-flex-pack: distribute;
   justify-content: space-around;
 }
-header.location span i {
+header .location span i {
   text-align: center;
   -webkit-transform: translateX(15px);
   transform: translateX(15px);
 }
-header.location span i input {
+header .location span input {
   border: none;
   background-color: #e6e5e5;
   font-weight: 700;
@@ -106,7 +106,7 @@ header p {
   width: 180px;
   border-radius: 25px;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
-  color: #fff;
+  color: #FFF;
   font-weight: 500;
   margin-bottom: 30px;
 }
