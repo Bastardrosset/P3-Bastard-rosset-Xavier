@@ -17,7 +17,7 @@ Textes: font-family: 'Roboto', sans-serif;
           box-sizing: border-box;
 }
 
-/******* Général *******/
+/******* PAGE D'ACCUEIL *******/
 * {
   margin: 0;
   padding: 0;
@@ -79,13 +79,15 @@ header .location {
               font-weight: 700;
               text-align: center;
 }}}
-
+header p {
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
 .reservez {
   background-color: #F2F2F2;
   height: 100%;
-}
-
-.reservez h2 {
+& h2 {
   text-align: center;
   padding-top: 30px;
   width: 250px;
@@ -93,16 +95,9 @@ header .location {
   position: relative;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
-
-header p {
-  text-align: center;
-  font-size: 18px;
-  padding-bottom: 20px;
-}
-
-.exploreRestaurants {
+& .exploreRestaurants {
   position: relative;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -115,8 +110,25 @@ header p {
   color: $color-white;
   font-weight: 500;
   margin-bottom: 30px;
-}
-
+  cursor: pointer;
+     & .exploreRestaurants:hover{
+       opacity: 0.4;
+}}}
+.fonctionnement{
+  margin: 10px;
+& ol{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  counter-reset: number;
+    & li{
+      list-style-type: none;
+      counter-increment: number;
+    }
+    & li:before{
+      content: counter(number);
+ }}}
 /*** Photos des restaurants ***/
 .column {
   background-color: #F2F2F2;
