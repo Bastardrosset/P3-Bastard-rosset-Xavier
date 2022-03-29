@@ -1,10 +1,10 @@
 {
-  "name": "ohmyfood",
+  "name": "claer",
   "version": "1.0.0",
   "description": "Projet N°3 ohmyfood",
   "main": "index.js",
   "scripts": {
-    "sass":"$ sass --watch  main.scss main.css"
+    "sass": "$ sass --watch  main.scss main.css"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,23 @@
   "homepage": "https://github.com/Bastardrosset/P3-Bastard-rosset-Xavier#readme",
   "devDependencies": {
     "sass": "^1.49.9"
+  },
+  "dependencies": {
+    "is-binary-path": "^2.1.0",
+    "anymatch": "^3.1.2",
+    "binary-extensions": "^2.2.0",
+    "immutable": "^4.0.0",
+    "glob-parent": "^5.1.2",
+    "chokidar": "^3.5.3",
+    "braces": "^3.0.2",
+    "is-extglob": "^2.1.1",
+    "fill-range": "^7.0.1",
+    "readdirp": "^3.6.0",
+    "picomatch": "^2.3.1",
+    "normalize-path": "^3.0.0",
+    "is-glob": "^4.0.3",
+    "is-number": "^7.0.0",
+    "source-map-js": "^1.0.2",
+    "to-regex-range": "^5.0.1"
   }
 }
