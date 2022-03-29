@@ -1,3 +1,38 @@
+.header_pages {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.header_pages h1 {
+  width: 100%;
+  text-align: center;
+}
+.header_pages a {
+  position: absolute;
+  margin-left: 25px;
+}
+
+footer {
+  background-color: #353535;
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+footer h2 {
+  color: #FFF;
+  font-family: "Shrikhand", cursive;
+  padding: 20px 0px 20px;
+}
+footer ul li {
+  color: #FFF;
+  line-height: 25px;
+}
+footer ul li i {
+  width: 35px;
+}
+footer ul li a {
+  color: #FFF;
+}
+
 /***
 logo et titres: font-family: 'Shrikhand'
 Textes: font-family: 'Roboto', sans-serif;
@@ -226,7 +261,7 @@ header p {
   content: "nouveau";
   position: absolute;
   font-size: 12px;
-  color: green;
+  color: #047F01;
   background-color: #99E2D0;
   padding: 5px 8px;
   border-radius: 3px;
@@ -263,25 +298,15 @@ header p {
   font-size: 13px;
 }
 
-footer {
-  background-color: #353535;
-  padding-left: 10px;
-  padding-bottom: 20px;
+/****************** SCSS DES PAGES RESTAURANTS *****************/
+.representative_photo {
+  width: 100%;
+  height: 200px;
 }
-footer h2 {
-  color: #FFF;
-  font-family: "Shrikhand", cursive;
-  padding: 20px 0px 20px;
-}
-footer ul li {
-  color: #FFF;
-  line-height: 25px;
-}
-footer ul li i {
-  width: 35px;
-}
-footer ul li a {
-  color: #FFF;
+.representative_photo img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=main.css.map */
