@@ -32,6 +32,10 @@ a {
   text-decoration: none;
   color: #000;
 }
+ul,
+ol{
+  list-style-type: none;
+}
 h1 {
   font-family: 'Shrikhand', cursive;
   font-weight: 900;
@@ -60,6 +64,9 @@ header .location {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+      & :focus{
+        outline: none;
+      }
       & i {
           text-align: center;
           -webkit-transform: translateX(15px);
@@ -114,8 +121,10 @@ header p {
       transition: .3s ease;
 }}
 .fonctionnement{
-  margin: 10px;
   width: 100%;
+  margin-bottom: 40px;
+  & h2{
+    margin: 30px 10px 15px;}
 & ol{
   flex-direction: column;
   align-items: flex-start;
@@ -123,7 +132,7 @@ header p {
   counter-reset: number;
     & li{
       list-style-type: none;
-      width: 90%;
+      width: 95%;
       height: 30px;
       margin: 25px 0px;
       counter-increment: number;
@@ -171,17 +180,82 @@ header p {
 .column img {
   width: 100%;
   height: 200px;
-  border-radius: 20px 20px 0 0;
+  border-radius: 15px 15px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.column{
+  padding-top: 20px;
+    & h2{
+      padding: 20px 0px 20px;
+    }
 }
 .Restaurant_1,
 .Restaurant_2,
 .Restaurant_3,
 .Restaurant_4 {
-  height: 250px;
-  width: 95%;
-  border-radius: 20px;
+  height: 270px;
+  width: 100%;
+  border-radius: 10px;
   background-color: $color-white;
+  margin-bottom: 30px;
 }
+.Restaurant_1 img,
+.Restaurant_2 img,
+.Restaurant_3 img,
+.Restaurant_4 img{
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+.Restaurant_1:after,
+.Restaurant_2:after{
+  content:"nouveau";
+  position:absolute;
+  font-size: 12px;
+  color: green;
+  background-color: $tertiary-color;
+  padding: 5px 8px;
+  border-radius: 3px;
+  margin-left: 75%;
+  transform: translateY(-245px);
+  }
+  .Restaurant_1 .text,
+  .Restaurant_2 .text,
+  .Restaurant_3 .text,
+  .Restaurant_4 .text{
+    margin: 10px 0px 0px 10px;
+    & h3{
+      font-size: 16px;
+      margin-bottom: 5px;}
+      & i{
+        float: right;
+        font-size: 22px;
+        margin-right: 20px;
+        transform: translateY(-35px);
+      }
+      & p{
+        font-size: 13px;
+      }
+  }
+  footer{
+    background-color: $color-dark-gray;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    & h2{
+      color: $color-white;
+      font-family: 'Shrikhand', cursive;
+      padding: 20px 0px 20px;
+    }
+    & ul li{
+      color: $color-white;
+      line-height: 25px;
+      & i{
+        width: 35px;
+      }
+      & a{
+        color: $color-white;
+      }
+    }
+  }
 /*# sourceMappingURL=main.css.map */

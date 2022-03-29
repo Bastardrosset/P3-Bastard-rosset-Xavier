@@ -26,6 +26,11 @@ a {
   color: #000;
 }
 
+ul,
+ol {
+  list-style-type: none;
+}
+
 h1 {
   font-family: "Shrikhand", cursive;
   font-weight: 900;
@@ -58,6 +63,9 @@ header .location span {
   align-items: center;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+}
+header .location span :focus {
+  outline: none;
 }
 header .location span i {
   text-align: center;
@@ -117,8 +125,11 @@ header p {
 }
 
 .fonctionnement {
-  margin: 10px;
   width: 100%;
+  margin-bottom: 40px;
+}
+.fonctionnement h2 {
+  margin: 30px 10px 15px;
 }
 .fonctionnement ol {
   flex-direction: column;
@@ -128,7 +139,7 @@ header p {
 }
 .fonctionnement ol li {
   list-style-type: none;
-  width: 90%;
+  width: 95%;
   height: 30px;
   margin: 25px 0px;
   counter-increment: number;
@@ -178,19 +189,99 @@ header p {
 .column img {
   width: 100%;
   height: 200px;
-  border-radius: 20px 20px 0 0;
+  border-radius: 15px 15px 0 0;
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+.column {
+  padding-top: 20px;
+}
+.column h2 {
+  padding: 20px 0px 20px;
 }
 
 .Restaurant_1,
 .Restaurant_2,
 .Restaurant_3,
 .Restaurant_4 {
-  height: 250px;
-  width: 95%;
-  border-radius: 20px;
+  height: 270px;
+  width: 100%;
+  border-radius: 10px;
   background-color: #FFF;
+  margin-bottom: 30px;
+}
+
+.Restaurant_1 img,
+.Restaurant_2 img,
+.Restaurant_3 img,
+.Restaurant_4 img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.Restaurant_1:after,
+.Restaurant_2:after {
+  content: "nouveau";
+  position: absolute;
+  font-size: 12px;
+  color: green;
+  background-color: #99E2D0;
+  padding: 5px 8px;
+  border-radius: 3px;
+  margin-left: 75%;
+  transform: translateY(-245px);
+}
+
+.Restaurant_1 .text,
+.Restaurant_2 .text,
+.Restaurant_3 .text,
+.Restaurant_4 .text {
+  margin: 10px 0px 0px 10px;
+}
+.Restaurant_1 .text h3,
+.Restaurant_2 .text h3,
+.Restaurant_3 .text h3,
+.Restaurant_4 .text h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.Restaurant_1 .text i,
+.Restaurant_2 .text i,
+.Restaurant_3 .text i,
+.Restaurant_4 .text i {
+  float: right;
+  font-size: 22px;
+  margin-right: 20px;
+  transform: translateY(-35px);
+}
+.Restaurant_1 .text p,
+.Restaurant_2 .text p,
+.Restaurant_3 .text p,
+.Restaurant_4 .text p {
+  font-size: 13px;
+}
+
+footer {
+  background-color: #353535;
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+footer h2 {
+  color: #FFF;
+  font-family: "Shrikhand", cursive;
+  padding: 20px 0px 20px;
+}
+footer ul li {
+  color: #FFF;
+  line-height: 25px;
+}
+footer ul li i {
+  width: 35px;
+}
+footer ul li a {
+  color: #FFF;
 }
 
 /*# sourceMappingURL=main.css.map */
