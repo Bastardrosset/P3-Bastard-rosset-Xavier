@@ -12,6 +12,13 @@
   margin-left: 25px;
 }
 
+.menus {
+  background-color: #FFF;
+  padding: 10px;
+  border-radius: 25px 25px 0px 0px;
+  transform: translateY(-20px);
+}
+
 footer {
   background-color: #353535;
   padding-left: 10px;
@@ -287,9 +294,11 @@ header p {
 .Restaurant_3 .text i,
 .Restaurant_4 .text i {
   float: right;
+  position: relative;
   font-size: 22px;
   margin-right: 20px;
   transform: translateY(-35px);
+  cursor: pointer;
 }
 .Restaurant_1 .text p,
 .Restaurant_2 .text p,

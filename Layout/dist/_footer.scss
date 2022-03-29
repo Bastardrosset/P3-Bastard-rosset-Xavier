@@ -1,0 +1,20 @@
+%footer{
+    background-color: $color-dark-gray;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    & h2{
+      color: $color-white;
+      font-family: 'Shrikhand', cursive;
+      padding: 20px 0px 20px;
+    }
+    & ul li{
+      color: $color-white;
+      line-height: 25px;
+      & i{
+        width: 35px;
+      }
+      & a{
+        color: $color-white;
+      }
+    }
+  }

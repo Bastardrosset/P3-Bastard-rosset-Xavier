@@ -6,6 +6,7 @@
 @import"./Base/utilities";
 @import"./Components/button";
 @import"./Layout/header";
+@import"./Layout/body";
 @import"./Layout/footer";
 /***
 logo et titres: font-family: 'Shrikhand'
@@ -227,12 +228,18 @@ header p {
     margin: 10px 0px 0px 10px;
     & h3{
       font-size: 16px;
-      margin-bottom: 5px;}
+      margin-bottom: 5px;
+    }
       & i{
         float: right;
+        position: relative;
         font-size: 22px;
         margin-right: 20px;
         transform: translateY(-35px);
+        cursor: pointer;
+        & :hover{
+          
+        }
       }
       & p{
         font-size: 13px;
@@ -245,6 +252,9 @@ header p {
 /****************** SCSS DES PAGES RESTAURANTS *****************/
 .header_pages{
   @extend %header_pages;
+}
+.menus{
+  @extend %body_menus;
 }
 .representative_photo{
   width: 100%;
