@@ -1,20 +1,7 @@
-.header_pages {
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-.header_pages h1 {
-  width: 100%;
-  text-align: center;
-}
-.header_pages a {
-  position: absolute;
-  margin-left: 25px;
-}
-
+@charset "UTF-8";
 .menus {
-  background-color: #FFF;
-  padding: 10px;
+  background-color: #e6e5e5;
+  padding: 15px;
   border-radius: 25px 25px 0px 0px;
   transform: translateY(-20px);
 }
@@ -40,6 +27,20 @@ footer ul li a {
   color: #FFF;
 }
 
+.header_pages {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.header_pages h1 {
+  width: 100%;
+  text-align: center;
+}
+.header_pages a {
+  position: absolute;
+  margin-left: 25px;
+}
+
 /***
 logo et titres: font-family: 'Shrikhand'
 Textes: font-family: 'Roboto', sans-serif;
@@ -51,6 +52,7 @@ Textes: font-family: 'Roboto', sans-serif;
 }
 
 /******* PAGE D'ACCUEIL *******/
+/*** Paramètres généraux ***/
 * {
   margin: 0;
   padding: 0;
@@ -61,6 +63,12 @@ Textes: font-family: 'Roboto', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.flexBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 a {
@@ -83,6 +91,7 @@ h2 {
   font-weight: 900;
 }
 
+/*** Header ***/
 header h1 {
   font-size: 26px;
   text-align: center;
@@ -128,6 +137,7 @@ header p {
   padding-bottom: 20px;
 }
 
+/*** Textes d'entête && bouton ***/
 .reservez {
   background-color: #F2F2F2;
   height: 100%;
@@ -166,6 +176,7 @@ header p {
   transition: 0.3s ease;
 }
 
+/*** Boutons Fonctionnement ***/
 .fonctionnement {
   width: 100%;
   margin-bottom: 40px;
@@ -221,7 +232,7 @@ header p {
   margin: 0px 30px 0px -20px;
 }
 
-/*** Photos des restaurants ***/
+/*** Main && Photos des restaurants ***/
 .column {
   background-color: #F2F2F2;
   padding: 10px;
@@ -297,7 +308,7 @@ header p {
   position: relative;
   font-size: 22px;
   margin-right: 20px;
-  transform: translateY(-35px);
+  transform: translateY(-30px);
   cursor: pointer;
 }
 .Restaurant_1 .text p,
@@ -307,7 +318,12 @@ header p {
   font-size: 13px;
 }
 
+/*** Footer ***/
 /****************** SCSS DES PAGES RESTAURANTS *****************/
+.bold {
+  font-weight: 700;
+}
+
 .representative_photo {
   width: 100%;
   height: 200px;
@@ -316,6 +332,44 @@ header p {
   width: 100%;
   height: 200px;
   object-fit: cover;
+}
+
+.menus h1 {
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px 0px 0px 5px;
+}
+.menus h2 {
+  position: relative;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 20px 0px 5px 5px;
+  width: 50%;
+}
+.menus h2::after {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 2px;
+  bottom: 0;
+  left: 5px;
+  background: #99E2D0;
+}
+.menus ul {
+  margin-top: 15px;
+  width: 100%;
+  height: 100%;
+}
+.menus ul li {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background-color: #FFF;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 1px 6px #b8b8b8;
+  text-overflow: ellipsis;
 }
 
 /*# sourceMappingURL=main.css.map */

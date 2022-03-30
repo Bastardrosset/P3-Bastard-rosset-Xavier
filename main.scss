@@ -1,13 +1,13 @@
 @charset "UTF-8";
-@import"./Abstracts/variables";
 @import"./Abstracts/mixins";
+@import"./Abstracts/variables";
 @import"./Base/animation";
 @import"./Base/base";
 @import"./Base/utilities";
 @import"./Components/button";
-@import"./Layout/header";
-@import"./Layout/body";
-@import"./Layout/footer";
+@import"./Layout/dist/body";
+@import"./Layout/dist/footer";
+@import"./Layout/dist/header";
 /***
 logo et titres: font-family: 'Shrikhand'
 Textes: font-family: 'Roboto', sans-serif;
@@ -19,6 +19,7 @@ Textes: font-family: 'Roboto', sans-serif;
 }
 
 /******* PAGE D'ACCUEIL *******/
+/*** Paramètres généraux ***/
 * {
   margin: 0;
   padding: 0;
@@ -28,6 +29,11 @@ Textes: font-family: 'Roboto', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.flexBetween{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 a {
   text-decoration: none;
@@ -45,6 +51,7 @@ h2 {
   font-size: 22px;
   font-weight: 900;
 }
+/*** Header ***/
 header h1 {
   font-size: 26px;
   text-align: center;
@@ -85,6 +92,7 @@ header p {
   font-size: 18px;
   padding-bottom: 20px;
 }
+/*** Textes d'entête && bouton ***/
 .reservez {
   background-color: #F2F2F2;
   height: 100%;
@@ -121,6 +129,7 @@ header p {
       transform: scale(1.1) translateX(-45%);
       transition: .3s ease;
 }}
+/*** Boutons Fonctionnement ***/
 .fonctionnement{
   width: 100%;
   margin-bottom: 40px;
@@ -172,7 +181,7 @@ header p {
     color: $color-gray;
     margin: 0px 30px 0px -20px;
 }}}
-/*** Photos des restaurants ***/
+/*** Main && Photos des restaurants ***/
 .column {
   background-color: #F2F2F2;
   padding: 10px;
@@ -235,7 +244,7 @@ header p {
         position: relative;
         font-size: 22px;
         margin-right: 20px;
-        transform: translateY(-35px);
+        transform: translateY(-30px);
         cursor: pointer;
         & :hover{
           
@@ -245,16 +254,17 @@ header p {
         font-size: 13px;
       }
   }
+  /*** Footer ***/
   footer{
     @extend %footer;
   }
 
 /****************** SCSS DES PAGES RESTAURANTS *****************/
+.bold{
+  font-weight: 700;
+}
 .header_pages{
   @extend %header_pages;
-}
-.menus{
-  @extend %body_menus;
 }
 .representative_photo{
   width: 100%;
@@ -263,5 +273,45 @@ header p {
     width: 100%;
     height: 200px;
     object-fit: cover;}
+}
+.menus{
+  @extend %body_menus;
+  & h1{
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 0px 0px 5px;
+  }
+  & h2{
+    position: relative;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding:20px 0px 5px 5px;
+    width: 50%;
+    &::after{
+      content: '';
+      position: absolute;
+      width: 35px;
+      height: 2px;
+      bottom: 0;
+      left: 5px;
+      background: $tertiary-color;
+    }
+  }
+  & ul{
+    margin-top: 15px;
+    width: 100%;
+    height: 100%;
+       li{
+         width: 100%;
+         height: 100%;
+         padding: 10px;
+         background-color: $color-white;
+         border-radius: 10px;
+         margin-bottom: 10px;
+         box-shadow: 0px 1px 6px $color-gray;
+         text-overflow: ellipsis;
+       }
+  }
 }
 /*# sourceMappingURL=main.css.map */
