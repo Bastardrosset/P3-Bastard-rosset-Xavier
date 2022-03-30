@@ -1,4 +1,26 @@
 @charset "UTF-8";
+.menus .commande, .exploreRestaurants {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border: none;
+  padding: 15px 5px;
+  width: 180px;
+  border-radius: 25px;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  color: #FFF;
+  font-weight: 500;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.menus .commande:hover, .exploreRestaurants:hover {
+  background: linear-gradient(50deg, #9356DC, #FF79DA);
+  transform: scale(1.1) translateX(-45%);
+  transition: 0.3s ease;
+}
+
 .menus {
   background-color: #e6e5e5;
   padding: 15px;
@@ -155,26 +177,6 @@ header p {
 .reservez p {
   font-size: 16px;
 }
-.reservez .exploreRestaurants {
-  position: relative;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  border: none;
-  padding: 15px 5px;
-  width: 180px;
-  border-radius: 25px;
-  background: linear-gradient(170deg, #FF79DA, #9356DC);
-  color: #FFF;
-  font-weight: 500;
-  margin-bottom: 30px;
-  cursor: pointer;
-}
-.reservez .exploreRestaurants:hover {
-  background: linear-gradient(50deg, #9356DC, #FF79DA);
-  transform: scale(1.1) translateX(-45%);
-  transition: 0.3s ease;
-}
 
 /*** Boutons Fonctionnement ***/
 .fonctionnement {
@@ -238,7 +240,6 @@ header p {
   padding: 10px;
   width: 100%;
 }
-
 .column img {
   width: 100%;
   height: 200px;
@@ -334,6 +335,15 @@ header p {
   object-fit: cover;
 }
 
+.menus::after {
+  content: "";
+  position: absolute;
+  background: #e6e5e5;
+  width: 100%;
+  height: 20px;
+  bottom: 0;
+  transform: translate(-15px, 20px);
+}
 .menus h1 {
   display: inline-block;
   font-size: 20px;
@@ -371,5 +381,10 @@ header p {
   box-shadow: 0px 1px 6px #b8b8b8;
   text-overflow: ellipsis;
 }
-
+.menus .add {
+  position: relative;
+  margin-top: 40px;
+  width: 100%;
+  height: 70px;
+}
 /*# sourceMappingURL=main.css.map */

@@ -4,10 +4,10 @@
 @import"./Base/animation";
 @import"./Base/base";
 @import"./Base/utilities";
-@import"./Components/button";
-@import"./Layout/dist/body";
-@import"./Layout/dist/footer";
-@import"./Layout/dist/header";
+@import"./Components/dist/button";
+@import"./Layout/body";
+@import"./Layout/footer";
+@import"./Layout/header";
 /***
 logo et titres: font-family: 'Shrikhand'
 Textes: font-family: 'Roboto', sans-serif;
@@ -108,27 +108,13 @@ header p {
 }
 & p{
   font-size: 16px;
-}
-& .exploreRestaurants {
-  position: relative;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  border: none;
-  padding: 15px 5px;
-  width: 180px;
-  border-radius: 25px;
-  background: linear-gradient(170deg, $secondary-color, $color-primary);
-  color: $color-white;
-  font-weight: 500;
-  margin-bottom: 30px;
-  cursor: pointer;
-}
-     & .exploreRestaurants:hover{
-      background: linear-gradient(50deg, $color-primary, $secondary-color);
-      transform: scale(1.1) translateX(-45%);
-      transition: .3s ease;
 }}
+.exploreRestaurants {
+  @extend %button-gradient;
+  &:hover{
+    @extend %hover;
+  }
+}
 /*** Boutons Fonctionnement ***/
 .fonctionnement{
   width: 100%;
@@ -186,14 +172,13 @@ header p {
   background-color: #F2F2F2;
   padding: 10px;
   width: 100%;
-}
-.column img {
-  width: 100%;
-  height: 200px;
-  border-radius: 15px 15px 0 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
+    & img {
+      width: 100%;
+      height: 200px;
+      border-radius: 15px 15px 0 0;
+      -o-object-fit: cover;
+       object-fit: cover;
+}}
 .column{
   padding-top: 20px;
     & h2{
@@ -276,6 +261,15 @@ header p {
 }
 .menus{
   @extend %body_menus;
+  &::after{
+    content: '';
+    position: absolute;
+    background: $color-light-gray;
+    width: 100%;
+    height: 20px;
+    bottom: 0;
+    transform: translate(-15px,20px);
+  }
   & h1{
     display: inline-block;
     font-size: 20px;
@@ -313,5 +307,17 @@ header p {
          text-overflow: ellipsis;
        }
   }
-}
+  & .add{
+    position: relative;
+    margin-top: 40px;
+    width: 100%;
+    height: 70px;
+  }
+  & .commande{
+    @extend %button-gradient;
+    &:hover{
+      @extend %hover;
+    }
+}}
+
 /*# sourceMappingURL=main.css.map */
