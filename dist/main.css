@@ -73,6 +73,100 @@ Textes: font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
 }
 
+/*** Loading-spinner ***/
+.loading {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.698);
+  backdrop-filter: blur(3px);
+  z-index: 1;
+  animation: loading 0.2s forwards;
+  animation-delay: 3s;
+}
+
+@keyframes loading {
+  100% {
+    transform: scale(0) translateY(-1200px);
+  }
+}
+.animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-animation {
+  position: absolute;
+  transform: translateY(60px);
+}
+
+.text-animation h2 {
+  color: #9356dc;
+  letter-spacing: 8px;
+  text-shadow: 0 0 20px #99e2d0;
+}
+
+.rod {
+  width: 5px;
+  height: 60px;
+  background: linear-gradient(45deg, #9356dc, #ff79da);
+  margin: 10px;
+  animation: rod 1s linear infinite;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #99e2d0;
+}
+
+.rod:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.rod:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.rod:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.rod:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+.rod:nth-child(6) {
+  animation-delay: 0.5s;
+}
+
+.rod:nth-child(7) {
+  animation-delay: 0.6s;
+}
+
+.rod:nth-child(8) {
+  animation-delay: 0.7s;
+}
+
+.rod:nth-child(9) {
+  animation-delay: 0.8s;
+}
+
+.rod:nth-child(10) {
+  animation-delay: 0.9s;
+}
+
+@keyframes rod {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
 /******* PAGE D'ACCUEIL *******/
 /*** Paramètres généraux ***/
 * {
