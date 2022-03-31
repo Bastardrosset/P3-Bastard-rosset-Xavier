@@ -87,12 +87,12 @@ Textes: font-family: 'Roboto', sans-serif;
   animation: loading 0.2s forwards;
   animation-delay: 3s;
 }
-
 @keyframes loading {
   100% {
     transform: scale(0) translateY(-1200px);
   }
 }
+
 .animation {
   display: flex;
   justify-content: center;
@@ -119,43 +119,33 @@ Textes: font-family: 'Roboto', sans-serif;
   border-radius: 20px;
   box-shadow: 0 0 20px #99e2d0;
 }
-
 .rod:nth-child(2) {
   animation-delay: 0.1s;
 }
-
 .rod:nth-child(3) {
   animation-delay: 0.2s;
 }
-
 .rod:nth-child(4) {
   animation-delay: 0.3s;
 }
-
 .rod:nth-child(5) {
   animation-delay: 0.4s;
 }
-
 .rod:nth-child(6) {
   animation-delay: 0.5s;
 }
-
 .rod:nth-child(7) {
   animation-delay: 0.6s;
 }
-
 .rod:nth-child(8) {
   animation-delay: 0.7s;
 }
-
 .rod:nth-child(9) {
   animation-delay: 0.8s;
 }
-
 .rod:nth-child(10) {
   animation-delay: 0.9s;
 }
-
 @keyframes rod {
   0% {
     transform: scale(0);
@@ -167,6 +157,7 @@ Textes: font-family: 'Roboto', sans-serif;
     transform: scale(0);
   }
 }
+
 /******* PAGE D'ACCUEIL *******/
 /*** Paramètres généraux ***/
 * {
@@ -406,6 +397,26 @@ header p {
   transform: translateY(-30px);
   cursor: pointer;
 }
+.Restaurant_1 .text i:hover,
+.Restaurant_2 .text i:hover,
+.Restaurant_3 .text i:hover,
+.Restaurant_4 .text i:hover {
+  opacity: 0;
+}
+.Restaurant_1 .text .over-flow,
+.Restaurant_2 .text .over-flow,
+.Restaurant_3 .text .over-flow,
+.Restaurant_4 .text .over-flow {
+  transform: translate(43px, -30px);
+  color: #9356DC;
+  opacity: 0;
+}
+.Restaurant_1 .text .over-flow:hover,
+.Restaurant_2 .text .over-flow:hover,
+.Restaurant_3 .text .over-flow:hover,
+.Restaurant_4 .text .over-flow:hover {
+  opacity: 10;
+}
 .Restaurant_1 .text p,
 .Restaurant_2 .text p,
 .Restaurant_3 .text p,
@@ -443,6 +454,11 @@ header p {
   font-size: 20px;
   padding: 10px 0px 0px 5px;
 }
+.menus i {
+  font-size: 20px;
+  float: right;
+  cursor: pointer;
+}
 .menus h2 {
   position: relative;
   font-size: 14px;
@@ -474,6 +490,12 @@ header p {
   margin-bottom: 10px;
   box-shadow: 0px 1px 6px #b8b8b8;
   text-overflow: ellipsis;
+}
+.menus p {
+  font-size: 14px;
+}
+.menus label {
+  float: right;
 }
 .menus .add {
   position: relative;

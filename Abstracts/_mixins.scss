@@ -1,2 +1,29 @@
-
+@mixin rods {
+    width: 5px;
+  height: 60px;
+  background: linear-gradient(45deg, #9356dc, #ff79da);
+  margin: 10px;
+  animation: rod 1s linear infinite;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #99e2d0;
+}
+@mixin loader {
+    height: 200vh;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.698);
+  backdrop-filter: blur(3px);
+  z-index: 1;
+  animation: loading .2s forwards;
+  animation-delay: 3s;
+   
+@keyframes loading{
+    100%{
+      transform: scale(0) translateY(-1200px);
+    }
+  } 
+}
 

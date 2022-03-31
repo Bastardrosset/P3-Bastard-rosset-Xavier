@@ -1,9 +1,6 @@
 @charset "UTF-8";
 @import"./Abstracts/mixins";
 @import"./Abstracts/variables";
-@import"./Base/animation";
-@import"./Base/base";
-@import"./Base/utilities";
 @import"./Components/dist/button";
 @import"./Layout/body";
 @import"./Layout/footer";
@@ -19,22 +16,7 @@ Textes: font-family: 'Roboto', sans-serif;
 }
 /*** Loading-spinner ***/
 .loading{
-  height: 100vh;
-  width: 100%;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(255, 255, 255, 0.698);
-  backdrop-filter: blur(3px);
-  z-index: 1;
-  animation: loading .2s forwards;
-  animation-delay: 3s;
-}
-@keyframes loading{
-  100%{
-    transform: scale(0) translateY(-1200px);
-  }
+  @include loader;
 }
 .animation {
   display: flex;
@@ -51,39 +33,32 @@ Textes: font-family: 'Roboto', sans-serif;
   text-shadow: 0 0 20px #99e2d0;
 }
 .rod {
-  width: 5px;
-  height: 60px;
-  background: linear-gradient(45deg, #9356dc, #ff79da);
-  margin: 10px;
-  animation: rod 1s linear infinite;
-  border-radius: 20px;
-  box-shadow: 0 0 20px #99e2d0;
-}
-.rod:nth-child(2) {
+  @include rods;
+&:nth-child(2) {
   animation-delay: 0.1s;
 }
-.rod:nth-child(3) {
+&:nth-child(3) {
   animation-delay: 0.2s;
 }
-.rod:nth-child(4) {
+&:nth-child(4) {
   animation-delay: 0.3s;
 }
-.rod:nth-child(5) {
+&:nth-child(5) {
   animation-delay: 0.4s;
 }
-.rod:nth-child(6) {
+&:nth-child(6) {
   animation-delay: 0.5s;
 }
-.rod:nth-child(7) {
+&:nth-child(7) {
   animation-delay: 0.6s;
 }
-.rod:nth-child(8) {
+&:nth-child(8) {
   animation-delay: 0.7s;
 }
-.rod:nth-child(9) {
+&:nth-child(9) {
   animation-delay: 0.8s;
 }
-.rod:nth-child(10) {
+&:nth-child(10) {
   animation-delay: 0.9s;
 }
 
@@ -97,7 +72,7 @@ Textes: font-family: 'Roboto', sans-serif;
   100% {
     transform: scale(0);
   }
-}
+}}
 /******* PAGE D'ACCUEIL *******/
 /*** Paramètres généraux ***/
 * {
@@ -311,8 +286,16 @@ header p {
         margin-right: 20px;
         transform: translateY(-30px);
         cursor: pointer;
-        & :hover{
-          
+        &:hover{
+          opacity: 0;
+         }
+      }
+      & .over-flow{
+        transform: translate(43px, -30px);
+        color: $color-primary;
+        opacity: 0;
+        &:hover{
+          opacity: 10;
         }
       }
       & p{
@@ -355,6 +338,11 @@ header p {
     font-size: 20px;
     padding: 10px 0px 0px 5px;
   }
+  & i{
+    font-size: 20px;
+    float: right;
+    cursor: pointer;
+  }
   & h2{
     position: relative;
     font-size: 14px;
@@ -386,6 +374,12 @@ header p {
          box-shadow: 0px 1px 6px $color-gray;
          text-overflow: ellipsis;
        }
+  }
+  & p{
+    font-size: 14px;
+  }
+  & label{
+    float: right;
   }
   & .add{
     position: relative;
