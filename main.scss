@@ -20,8 +20,9 @@ Textes: font-family: 'Roboto', sans-serif;
 }
 .animation {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  transform: translateY(-300px);
 }
 .text-animation {
   position: absolute;
@@ -313,6 +314,8 @@ header p {
 }
 .header_pages{
   @extend %header_pages;
+  & h1{
+  }
 }
 .representative_photo{
   width: 100%;
@@ -333,7 +336,7 @@ header p {
     bottom: 0;
     transform: translate(-15px,20px);
   }
-  & h1{
+  & h2{
     display: inline-block;
     font-size: 20px;
     padding: 10px 0px 0px 5px;
@@ -343,7 +346,7 @@ header p {
     float: right;
     cursor: pointer;
   }
-  & h2{
+  & h3{
     position: relative;
     font-size: 14px;
     text-transform: uppercase;
@@ -359,24 +362,92 @@ header p {
       left: 5px;
       background: $tertiary-color;
     }
+    & .entrees{
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
   }
   & ul{
     margin-top: 15px;
     width: 100%;
     height: 100%;
+    overflow: hidden;
        li{
+        display: flex;
+        flex-direction: column;
          width: 100%;
-         height: 100%;
+         height: 60px;
          padding: 10px;
          background-color: $color-white;
          border-radius: 10px;
          margin-bottom: 10px;
          box-shadow: 0px 1px 6px $color-gray;
+         transform: translateY(-250px) scale(0);
          text-overflow: ellipsis;
+         &:nth-child(1),
+         &:nth-child(2),
+         &:nth-child(3),
+         &:nth-child(4){
+           display: inline-block;
+         }
+          &:nth-child(1){
+            animation-name: cascade_1;
+            animation-delay: 10ms;
+            animation-delay: .5s;
+            animation-duration: .3s;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
+          }
+          @keyframes cascade_1{
+            100%{
+              transform: translateY(0px) scale(1);
+           }}
+           &:nth-child(2){
+            animation-name: cascade_2;
+            animation-delay: 10ms;
+            animation-delay: .6s;
+            animation-duration: .2s;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
+           }
+           @keyframes cascade_2{
+             100%{
+               transform: translateY(0px) scale(1);
+            }}
+            &:nth-child(3){
+              animation-name: cascade_3;
+              animation-delay: 10ms;
+              animation-delay: .7s;
+              animation-duration: .2s;
+              animation-timing-function: ease;
+              animation-fill-mode: forwards;
+             }
+             @keyframes cascade_3{
+               100%{
+                 transform: translateY(0px) scale(1);
+              }}&:nth-child(4){
+                animation-name: cascade_4;
+                animation-delay: 10ms;
+                animation-delay: .5s;
+                animation-duration: .3s;
+                animation-timing-function: ease;
+                animation-fill-mode: forwards;
+              }
+              @keyframes cascade_4{
+                100%{
+                  transform: translateY(0px) scale(1);
+               }} 
+        @keyframes ghost{
+                from{
+                  transform: translateY(0) scale(1);
+                }
+              } 
        }
   }
   & p{
     font-size: 14px;
+    line-height: 30px;
   }
   & label{
     float: right;
