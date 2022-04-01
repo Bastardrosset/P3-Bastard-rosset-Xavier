@@ -497,14 +497,11 @@ header p {
   height: 60px;
   padding: 10px;
   background-color: #FFF;
-  border-radius: 10px;
+  border-radius: 8px;
   margin-bottom: 10px;
   box-shadow: 0px 1px 6px #b8b8b8;
   transform: translateY(-250px) scale(0);
   text-overflow: ellipsis;
-}
-.menus ul li:nth-child(1), .menus ul li:nth-child(2), .menus ul li:nth-child(3), .menus ul li:nth-child(4) {
-  display: inline-block;
 }
 .menus ul li:nth-child(1) {
   animation-name: cascade_1;
@@ -548,7 +545,7 @@ header p {
 .menus ul li:nth-child(4) {
   animation-name: cascade_4;
   animation-delay: 10ms;
-  animation-delay: 0.5s;
+  animation-delay: 0.7s;
   animation-duration: 0.3s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
@@ -556,11 +553,6 @@ header p {
 @keyframes cascade_4 {
   100% {
     transform: translateY(0px) scale(1);
-  }
-}
-@keyframes ghost {
-  from {
-    transform: translateY(0) scale(1);
   }
 }
 .menus p {

@@ -314,8 +314,6 @@ header p {
 }
 .header_pages{
   @extend %header_pages;
-  & h1{
-  }
 }
 .representative_photo{
   width: 100%;
@@ -381,17 +379,11 @@ header p {
          height: 60px;
          padding: 10px;
          background-color: $color-white;
-         border-radius: 10px;
+         border-radius: 8px;
          margin-bottom: 10px;
          box-shadow: 0px 1px 6px $color-gray;
          transform: translateY(-250px) scale(0);
          text-overflow: ellipsis;
-         &:nth-child(1),
-         &:nth-child(2),
-         &:nth-child(3),
-         &:nth-child(4){
-           display: inline-block;
-         }
           &:nth-child(1){
             animation-name: cascade_1;
             animation-delay: 10ms;
@@ -430,7 +422,7 @@ header p {
               }}&:nth-child(4){
                 animation-name: cascade_4;
                 animation-delay: 10ms;
-                animation-delay: .5s;
+                animation-delay: .7s;
                 animation-duration: .3s;
                 animation-timing-function: ease;
                 animation-fill-mode: forwards;
@@ -439,11 +431,6 @@ header p {
                 100%{
                   transform: translateY(0px) scale(1);
                }} 
-        @keyframes ghost{
-                from{
-                  transform: translateY(0) scale(1);
-                }
-              } 
        }
   }
   & p{
