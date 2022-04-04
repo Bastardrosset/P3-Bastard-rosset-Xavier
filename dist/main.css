@@ -501,7 +501,7 @@ header p {
   margin-bottom: 10px;
   box-shadow: 0px 1px 6px #b8b8b8;
   transform: translateY(-250px) scale(0);
-  text-overflow: ellipsis;
+  cursor: pointer;
 }
 .menus ul li:nth-child(1) {
   animation-name: cascade_1;
@@ -558,9 +558,52 @@ header p {
 .menus p {
   font-size: 14px;
   line-height: 30px;
+  text-overflow: ellipsis;
 }
-.menus label {
-  float: right;
+.menus .checked {
+  position: absolute;
+  right: 0;
+  padding-right: 10px;
+  top: 50%;
+  transition: 0.3s ease;
+}
+.menus .checked:after {
+  content: "";
+  position: absolute;
+  background-color: #99E2D0;
+  transform: translate(10px, -30px);
+  border-radius: 0px 8px 8px 0px;
+  width: 60px;
+  height: 60px;
+}
+.menus .checked input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+}
+.menus .checked input {
+  position: absolute;
+  transform: translate(30px, -10px);
+  width: 20px;
+  height: 20px;
+  background: #FFF;
+  border-radius: 50%;
+  z-index: 10;
+}
+.menus .checked input:after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 12px;
+  border-right: 2px solid #99E2D0;
+  border-bottom: 2px solid #99E2D0;
+  transform: translate(10px) rotate(100deg);
+}
+.menus li:hover > .checked {
+  transform: translateX(-60px);
+}
+.menus li:hover > .checked input:after {
+  transform: translate(6px, 2px) rotate(400deg);
 }
 .menus .add {
   position: relative;
