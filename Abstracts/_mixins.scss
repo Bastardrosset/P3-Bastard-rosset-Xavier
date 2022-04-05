@@ -1,11 +1,11 @@
 @mixin rods {
     width: 5px;
   height: 60px;
-  background: linear-gradient(45deg, #9356dc, #ff79da);
+  background: linear-gradient(45deg, #99e2d0, #ff79da,#9356dc, #ff79da,#99e2d0);
   margin: 10px;
   animation: rod 1s linear infinite;
   border-radius: 20px;
-  box-shadow: 0 0 20px #99e2d0;
+  box-shadow: 3px 3px 20px #99e2d0;
 }
 @mixin loader {
   height: 300vh;
@@ -27,4 +27,17 @@
     }
   } 
 }
-
+@mixin over-flow {
+  color: transparent;
+  background-image: -webkit-linear-gradient(bottom,$color-primary,$secondary-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  overflow: hidden;
+  transform: translate(42px, -30px);
+  opacity: 0;
+  transition: .8s ease;
+  &:hover{
+    opacity: 10; 
+      }
+  
+}

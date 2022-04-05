@@ -23,6 +23,9 @@ Textes: font-family: 'Roboto', sans-serif;
   align-items: center;
   justify-content: center;
   transform: translateY(-300px);
+  & .rod{
+    @include rods;
+  }
 }
 .text-animation {
   position: absolute;
@@ -292,13 +295,7 @@ header p {
          }
       }
       & .over-flow{
-        transform: translate(43px, -30px);
-        background-image: -webkit-linear-gradient(20deg,$color-primary,$secondary-color);
-        overflow: hidden;
-        opacity: 0;
-        &:hover{
-          opacity: 10;
-        }
+        @include over-flow;
       }
       & p{
         font-size: 13px;
@@ -335,17 +332,34 @@ header p {
     bottom: 0;
     transform: translate(-15px,20px);
   }
-  & h2{
+  & .enseigne{
+    & h2{
     display: inline-block;
     font-size: 20px;
     padding: 10px 0px 0px 5px;
     font-family: 'Shrikhand', cursive;
-  }
-  & i{
-    font-size: 20px;
+    }
+    & i{
     float: right;
+    position: relative;
+    font-size: 20px;
     cursor: pointer;
-  }
+    &:hover{
+      opacity: 0;
+    }}
+    & :nth-child(3){
+      color: transparent;
+      background-image: -webkit-linear-gradient(bottom,$color-primary,$secondary-color);
+      background-clip: text;
+      -webkit-background-clip: text;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateX(20px);
+      transition: .8s ease;
+      &:hover{
+        opacity: 10; 
+          }
+  }}
   & h3{
     position: relative;
     font-size: 14px;
@@ -502,15 +516,16 @@ header p {
   .fonctionnement ol{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    width: 100%;
     & li {
-      width: 250px;
-      margin-right: 10px;
+      margin-right: -6px;
+      transform: translateX(-10px);
       & button{
-        width: 260px;
+        width: 220px;
       }
       & i{
-        margin-right: 2px;
+        margin-right: 10px;
+        margin-left: 5px;
       }
     }}
   
