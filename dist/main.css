@@ -780,13 +780,15 @@ header p {
   .tablette .enseigne {
     position: absolute;
     display: flex;
-    justify-content: space-around;
     align-items: baseline;
     transform: translate(-135%, -60px);
     width: 300px;
   }
+  .tablette .enseigne .far {
+    padding-left: 40px;
+  }
   .tablette .enseigne .fas {
-    transform: translateX(-57px);
+    transform: translateX(-20px);
   }
 
   #footer-restaurants {
