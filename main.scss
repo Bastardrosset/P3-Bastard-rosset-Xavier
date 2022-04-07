@@ -634,7 +634,7 @@ footer ul{
         position: absolute;
         display: flex;
         align-items: baseline;
-        transform: translate(-135%, -60px);
+        transform: translate(-125%, -60px);
         width: 300px;
         & .far{
           padding-left: 40px;
@@ -649,13 +649,14 @@ footer ul{
   grid-area: 2 / 1 / 3 / 2;
   margin-left: 10px;
   width: 50%;
-  height: 19%;
-  transform: translateY(-112.2%);
+  height: 30%;
+  transform: translateY(-110%);
   border-radius: 0px 0px 0px 25px;
   z-index: 1;
   & ul{
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
     & li{
       line-height: 30px;
     }
