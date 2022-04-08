@@ -814,6 +814,17 @@ header p {
 }
 /***************** Responsive Desktop *****************/
 @media screen and (min-width: 912px) {
+  header h1 {
+    font-size: 30px;
+  }
+
+  header .location {
+    height: 60px;
+  }
+  header .location input {
+    font-size: 20px;
+  }
+
   .responsive .Restaurant_1:after,
 .responsive .Restaurant_2:after {
     transform: translate(350px, -245px);
