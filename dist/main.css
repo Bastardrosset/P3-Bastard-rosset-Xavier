@@ -660,7 +660,8 @@ header p {
   height: 70px;
 }
 
-/**************** Responsive tablette *****************/
+/**************** Responsive tablette && Desktop *****************/
+/********** Page d'accueil **********/
 @media screen and (min-width: 768px) {
   .fonctionnement ol {
     display: flex;
@@ -734,7 +735,8 @@ header p {
 
   /**************** pages des restaurants ***************/
   .header_pages {
-    margin-bottom: 60px;
+    margin-bottom: 80px;
+    overflow: hidden;
   }
   .header_pages i {
     font-size: 24px;
@@ -758,13 +760,14 @@ header p {
   }
   .tablette .representative_photo img {
     width: 100%;
-    height: 150%;
+    height: 45rem;
     object-fit: cover;
     border-radius: 25px 0px 0px 0px;
     transform: translateY(-20px);
   }
   .tablette .menus {
     grid-area: 1/2/3/3;
+    height: 60rem;
     border-radius: 0px 25px 25px 0px;
     z-index: 2;
   }
@@ -785,20 +788,19 @@ header p {
     width: 300px;
   }
   .tablette .enseigne .far {
-    padding-left: 40px;
+    margin-left: 40px;
   }
   .tablette .enseigne .fas {
     transform: translateX(-20px);
   }
 
   #footer-restaurants {
-    position: absolute;
+    position: relative;
     grid-area: 2/1/3/2;
-    margin-left: 10px;
-    width: 50%;
-    height: 30%;
-    transform: translateY(-110%);
+    width: 100%;
+    height: 15rem;
     border-radius: 0px 0px 0px 25px;
+    transform: translateY(-25px);
     z-index: 1;
   }
   #footer-restaurants ul {
@@ -808,6 +810,40 @@ header p {
   }
   #footer-restaurants ul li {
     line-height: 30px;
+  }
+}
+/***************** Responsive Desktop *****************/
+@media screen and (min-width: 912px) {
+  .responsive .Restaurant_1:after,
+.responsive .Restaurant_2:after {
+    transform: translate(350px, -245px);
+  }
+
+  .menus .enseigne {
+    transform: translate(-110%, -60px);
+    width: 400px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .responsive .Restaurant_1:after,
+.responsive .Restaurant_2:after {
+    transform: translate(400px, -245px);
+  }
+
+  .menus .enseigne {
+    transform: translate(-120%, -60px);
+    width: 400px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .responsive .Restaurant_1:after,
+.responsive .Restaurant_2:after {
+    transform: translate(540px, -245px);
+  }
+
+  .menus .enseigne {
+    transform: translate(-155%, -60px);
+    width: 400px;
   }
 }
 /*# sourceMappingURL=main.css.map */
