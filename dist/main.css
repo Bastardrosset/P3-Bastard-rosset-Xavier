@@ -772,7 +772,8 @@ header p {
     z-index: 2;
   }
   .tablette .menus h3 {
-    padding-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 5px;
   }
   .tablette .menus .menus-enseigne .menu-list {
     margin-top: 5px;
