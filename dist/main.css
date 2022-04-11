@@ -425,7 +425,7 @@ header p {
   overflow: hidden;
   transform: translate(20px, 10px);
   opacity: 0;
-  transition: 2s ease;
+  transition: 1s ease;
 }
 .Restaurant_1 .text .over-flow:hover,
 .Restaurant_2 .text .over-flow:hover,
@@ -489,7 +489,7 @@ header p {
   overflow: hidden;
   transform: translate(20px, 10px);
   opacity: 0;
-  transition: 2s ease;
+  transition: 1s ease;
 }
 .menus .enseigne :nth-child(3):hover {
   opacity: 10;
@@ -791,9 +791,10 @@ header p {
   }
   .tablette .enseigne .far {
     margin-left: 40px;
+    transform: translateY(1px);
   }
   .tablette .enseigne .fas {
-    transform: translateX(-20px);
+    transform: translate(-20px, 1px);
   }
 
   #footer-restaurants {

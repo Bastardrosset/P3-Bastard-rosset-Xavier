@@ -633,9 +633,10 @@ footer ul{
         width: 300px;
         & .far{
           margin-left: 40px;
+          transform: translateY(1px);
         }
         & .fas{
-          transform: translateX(-20px);
+          transform: translate(-20px,1px);
         }
       }
 }
