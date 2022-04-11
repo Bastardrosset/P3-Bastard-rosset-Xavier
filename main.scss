@@ -5,6 +5,7 @@
 @import"./Layout/body";
 @import"./Layout/footer";
 @import"./Layout/header";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Shrikhand&display=swap');
 /***
 logo et titres: font-family: 'Shrikhand'
 Textes: font-family: 'Roboto', sans-serif;
@@ -497,22 +498,22 @@ header p {
             content: '';
             position: absolute;
             width: 6px;
-            height: 12px;
+            height: 10px;
             border-right: 2px solid $tertiary-color;
             border-bottom: 2px solid $tertiary-color;
-            transform: translate(20px) rotate(100deg);
+            transform:  rotate(260deg);
           }
         }
       }
       &:hover > .checked{
         transform: translateX(-50px);
-        transition: .5s ease;
         & input:after{
-          transform: translate(6px,2px) rotate(400deg);
+          transform: translate(6px,2px) rotate(40deg);
+          transition: .3s ease;
         }
         }
       &:hover > .items p{
-        width: 80%;
+        width: 70%;
       }
   }}
 
