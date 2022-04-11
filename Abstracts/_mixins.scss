@@ -10,7 +10,6 @@
 @mixin loader {
   height: 300vh;
   width: 100%;
-  transform: translateY(-600px);
   position: absolute;
   display: flex;
   align-items: center;
@@ -23,7 +22,7 @@
    
 @keyframes loading{
     100%{
-      transform: scale(0) translateY(-1200px);
+      transform: scale(0);
     }
   } 
 }
