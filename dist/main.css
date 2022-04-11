@@ -836,4 +836,19 @@ header p {
     transform: translate(540px, -245px);
   }
 }
+/************** Responsive mobile ULTA SMALL *************/
+@media screen and (max-width: 349px) and (min-width: 250px) {
+  .Restaurant_1:after,
+.Restaurant_2:after {
+    content: "nouveau";
+    position: absolute;
+    font-size: 12px;
+    color: #047F01;
+    background-color: #99E2D0;
+    padding: 5px 8px;
+    border-radius: 3px;
+    margin-left: 0%;
+    transform: translate(180px, -245px);
+  }
+}
 /*# sourceMappingURL=main.css.map */
