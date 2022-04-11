@@ -423,7 +423,7 @@ header p {
   background-clip: text;
   -webkit-background-clip: text;
   overflow: hidden;
-  transform: translate(42px, -30px);
+  transform: translate(20px, 10px);
   opacity: 0;
   transition: 2s ease;
 }
@@ -476,6 +476,7 @@ header p {
   position: relative;
   font-size: 20px;
   cursor: pointer;
+  transform: translateY(10px);
 }
 .menus .enseigne i:hover {
   opacity: 0;
@@ -486,9 +487,9 @@ header p {
   background-clip: text;
   -webkit-background-clip: text;
   overflow: hidden;
+  transform: translate(20px, 10px);
   opacity: 0;
-  transform: translateX(20px);
-  transition: 0.8s ease;
+  transition: 2s ease;
 }
 .menus .enseigne :nth-child(3):hover {
   opacity: 10;

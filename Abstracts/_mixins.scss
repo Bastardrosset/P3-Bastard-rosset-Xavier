@@ -33,9 +33,9 @@
   background-clip: text;
   -webkit-background-clip: text;
   overflow: hidden;
-  transform: translate(42px, -30px);
+  transform: translate(20px,10px);
   opacity: 0;
-  transition: 2s ease;
+  transition: 1s ease;
   &:hover{
     opacity: 10; 
       }

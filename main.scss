@@ -344,21 +344,12 @@ header p {
     position: relative;
     font-size: 20px;
     cursor: pointer;
+    transform: translateY(10px);
     &:hover{
       opacity: 0;
     }}
     & :nth-child(3){
-      color: transparent;
-      background-image: -webkit-linear-gradient(bottom,$color-primary,$secondary-color);
-      background-clip: text;
-      -webkit-background-clip: text;
-      overflow: hidden;
-      opacity: 0;
-      transform: translateX(20px);
-      transition: .8s ease;
-      &:hover{
-        opacity: 10; 
-          }
+      @include over-flow;
   }}
   & h3{
     position: relative;
