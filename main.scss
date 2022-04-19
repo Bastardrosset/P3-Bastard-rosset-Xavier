@@ -23,7 +23,7 @@ Textes: font-family: 'Roboto', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translateY(-300px);
+  transform: translateY(-800px);
   & .rod{
     @include rods;
   }
@@ -249,6 +249,7 @@ header p {
 .Restaurant_2,
 .Restaurant_3,
 .Restaurant_4 {
+  position: relative;
   height: 270px;
   width: 100%;
   border-radius: 10px;
@@ -273,7 +274,8 @@ header p {
   padding: 5px 8px;
   border-radius: 3px;
   margin-left: 75%;
-  transform: translateY(-245px);
+  top: 10px;
+  right: 10px;
   }
   .Restaurant_1 .text,
   .Restaurant_2 .text,
@@ -468,6 +470,7 @@ header p {
         display: flex;
         justify-content: center;
         align-items: flex-end;
+        transition: .5s ease;
         & span{
           font-size: 14px;
           &:after{
@@ -567,18 +570,6 @@ header p {
     & .Restaurant_4 {
       grid-area: 2 / 2 / 3 / 3;
     }
-    .Restaurant_1:after,
-    .Restaurant_2:after{
-      content:"nouveau";
-      position:absolute;
-      font-size: 12px;
-      color: $color-green;
-      background-color: $tertiary-color;
-      padding: 5px 8px;
-      border-radius: 3px;
-      margin-left: 0%;
-      transform: translate(280px,-245px);
-      }
   }
 
 footer ul{
@@ -670,42 +661,5 @@ footer ul{
             font-size: 20px;
 }
   }
-  .responsive{
-    .Restaurant_1:after,
-    .Restaurant_2:after{
-      transform: translate(350px,-245px);
-      }
-  }
-}
-@media  screen and(min-width:"992px"){
-  .responsive{
-    .Restaurant_1:after,
-    .Restaurant_2:after{
-      transform: translate(400px,-245px);
-      }
-  }
-}
-@media  screen and(min-width:"1280px"){
-  .responsive{
-    .Restaurant_1:after,
-    .Restaurant_2:after{
-      transform: translate(540px,-245px);
-      }
-  }
-}
-/************** Responsive mobile ULTA SMALL *************/
-@media  screen and (max-width:"349px") and (min-width:"250px") {
-  .Restaurant_1:after,
-    .Restaurant_2:after{
-      content:"nouveau";
-      position:absolute;
-      font-size: 12px;
-      color: $color-green;
-      background-color: $tertiary-color;
-      padding: 5px 8px;
-      border-radius: 3px;
-      margin-left: 0%;
-      transform: translate(180px,-245px);
-      }
 }
 /*# sourceMappingURL=main.css.map */
